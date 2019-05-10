@@ -10,6 +10,8 @@ import org.springframework.web.reactive.function.server.router
 class SimpleRoute {
     @Bean
     fun route() = router {
-        GET("/hello") { ServerResponse.ok().body(fromObject("Hello World!")) }
+        GET("/hello") {
+            ServerResponse.ok().body(fromObject("Hello World!"))
+        }
     }
 }
