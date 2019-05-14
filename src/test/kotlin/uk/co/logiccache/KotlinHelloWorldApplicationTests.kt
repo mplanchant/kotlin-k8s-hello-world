@@ -10,7 +10,12 @@ import org.springframework.test.context.junit4.SpringRunner
 class KotlinHelloWorldApplicationTests {
 
     @Test
-    fun contextLoads() {
+    fun context_loads() {
     }
 
+    @Test
+    fun test_main() {
+        val args = arrayOf<String>()
+        main(args)
+    }
 }
