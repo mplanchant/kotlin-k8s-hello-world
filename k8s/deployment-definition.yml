@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kotlin-hello-world-deployment
-  labels:
-    app: kotlin-hello-world
 spec:
   replicas: 3
   selector:
