@@ -1,4 +1,4 @@
-FROM openjdk:11-jre-slim
+FROM adoptopenjdk/openjdk11:alpine-slim
 
 ENV APPLICATION_USER=app \
     APPLICATION_GROUP=app_group \
@@ -7,9 +7,7 @@ ENV APPLICATION_USER=app \
 RUN addgroup ${APPLICATION_GROUP} && \
     adduser --gecos "" --disabled-password --ingroup ${APPLICATION_GROUP} ${APPLICATION_USER}
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    gosu \
-    && rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache su-exec
 
 EXPOSE 8990
 
