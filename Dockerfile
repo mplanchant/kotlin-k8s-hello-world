@@ -18,4 +18,4 @@ RUN chmod 555 /wrapper.sh
 
 ENTRYPOINT ["/wrapper.sh"]
 
-COPY target/kotlin-hello-world-0.0.1-SNAPSHOT.jar ${APPLICATION_PATH}
+COPY target/kotlin-k8s-hello-world-0.0.1-SNAPSHOT.jar ${APPLICATION_PATH}

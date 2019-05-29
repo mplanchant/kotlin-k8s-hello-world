@@ -11,9 +11,9 @@
     </parent>
 
     <groupId>uk.co.logiccache</groupId>
-    <artifactId>kotlin-hello-world</artifactId>
+    <artifactId>kotlin-k8s-hello-world</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>kotlin-hello-world</name>
+    <name>kotlin-k8s-hello-world</name>
     <description>Kotlin project for Spring Boot</description>
 
     <properties>

@@ -12,11 +12,13 @@ Build the jar
 
 Build the Docker image
 
-`docker build . -t "kotlin-hello-world"`
+`docker build . -t "kotlin-k8s-hello-world"`
 
 Test the Docker image
 
-`docker run -p 8080:8080 kotlin-hello-world:latest`
+`docker run -p 8080:8080 kotlin-k8s-hello-world:latest`
+
+`curl localhost:8080/hello`
 
 Create deployment in Minikube
 
