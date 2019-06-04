@@ -6,17 +6,13 @@
 
 ## Running the application locally with Kubernetes via Minikube
 
-Build the jar
+Compile and build the Docker image
 
-`./mvnw clean package`
-
-Build the Docker image
-
-`docker build . -t "kotlin-k8s-hello-world"`
+`./mvnw compile jib:dockerBuild`
 
 Test the Docker image
 
-`docker run -p 8080:8080 kotlin-k8s-hello-world:latest`
+`docker run -p 8080:8080 kotlin-k8s-hello-world:0.0.1-SNAPSHOT`
 
 `curl localhost:8080/hello`
 
