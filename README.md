@@ -1,3 +1,7 @@
+# kotlin-k8s-hello-world
+
+[![Build Status](https://travis-ci.com/mplanchant/kotlin-k8s-hello-world.svg?branch=master)](https://travis-ci.com/mplanchant/kotlin-k8s-hello-world)
+
 ## Requirements
 
 * [Java 11](https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot) 
